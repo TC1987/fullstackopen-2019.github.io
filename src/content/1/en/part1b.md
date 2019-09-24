@@ -451,7 +451,7 @@ const referenceToGreet = arto.greet
 referenceToGreet() // error message is printed to console
 ```
 
-When calling the method through a reference the method has lost knowledge of what was the original _this_. Contrary to other languages, in Javascript the value of [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) is defined based on <i>how the method is called</i>. When calling the method through a reference the value of _this_ becomes the so-called [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object) and the end result is often not what the software developer had originally intended.
+When calling the method through a reference the method has lost knowledge of what was the original _this_. Contrary to other languages, in Javascript the value of [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) is defined based on <i>how the method is called</i>. When calling the method through a reference in the global scope, the value of _this_ becomes the so-called [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object) and the end result is often not what the software developer had originally intended.
 
 Losing track of _this_ when writing Javascript code brings forth a few potential issues. Situations often arise where React or Node (or more specifically the Javascript engine of the web browser) needs to call some method in an object that the developer has defined. However, in this course we avoid issues by using the "this-less" Javascript.
 
