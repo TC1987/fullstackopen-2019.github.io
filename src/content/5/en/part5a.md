@@ -456,7 +456,7 @@ Values in the storage stay even when the page is rerendered. The storage is [ori
 Let's extend our application so that it saves the user details of a logged in user to the local storage. 
 
 
-Values saved to the storage are [DOMstrings](https://developer.mozilla.org/en-US/docs/Web/API/DOMString), so we cannot save a JavaScript object as is. The object has to be first parsed to JSON with the method _JSON.stringify_. Correspondigly when a JSON-object is read from the local storage, it has to be parsed back to JavaScript with _JSON.parse_.
+Values saved to the storage are [DOMstrings](https://developer.mozilla.org/en-US/docs/Web/API/DOMString), so we cannot save a JavaScript object as is. The object has to be first parsed to JSON with the method _JSON.stringify_. Correspondigly, when it is read from local storage, it has to be parsed back into a JavaScript object with _JSON.parse_.
 
 
 Changes to the login method are as follows: 
