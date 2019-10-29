@@ -578,6 +578,7 @@ For this reason, we will create a helper <i>Wrapper</i> component that renders t
 const Wrapper = (props) => {
 
   const onChange = (event) => {
+    // Hello, I believe this is an error because state is being mutated directly without setState or the update function from calling useState. We haven't covered much about how React works behind the scenes but although this seems to work, there can be weird bugs that we encounter because React will not call any of its lifecycle methods (if using a class constructor) because it doesn't know that its data has changed.
     props.state.value = event.target.value
   }
 
