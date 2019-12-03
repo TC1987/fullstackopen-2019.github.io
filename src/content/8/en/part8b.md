@@ -159,7 +159,7 @@ export default App
 
 
 The code does seem a bit confusing. 
-The core of the code is the component <i>Query</i>. The query to be made is in the variable <em>ALL\_PERSONS</em>. The query is given to the Query component as a parameter. Within the tags of the <i>Query</i> component is a function, which returns the actual JSX to be rendered. A parameter of the function, <i>results</i>, contains the result of the GraphQL query. 
+The core of the code is the component <i>Query</i>. The query to be made is in the variable <em>ALL\_PERSONS</em>. The query is given to the Query component as a prop. Within the tags of the <i>Query</i> component is a function, which returns the actual JSX to be rendered. A parameter of the function, <i>results</i>, contains the result of the GraphQL query. 
 
 
 The result, the object in parameter _results_, has multiple [fields](https://www.apollographql.com/docs/react/v2.5/essentials/queries/#render-prop-function).
